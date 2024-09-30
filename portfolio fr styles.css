@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Monserrat", sans-serif;
+  background-color: #ebf9ff;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 48px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: #ebf9ff;
+  box-sizing: border-box; /* Include padding and border in the width */
+  height: 80px;
+}
+
+.button,
+.button1 {
+  padding: 12px 24px;
+  border-radius: 35px;
+  border: 2px solid transparent; /* Set border width but keep it transparent */
+  background-color: #3abeff;
+  color: #ebf9ff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button:hover {
+  color: #3abeff;
+  background-color: #ebf9ff;
+  border: 2px solid #3abeff; /* Just change the color on hover */
+}
+.button:focus {
+  /* color: #3abeff; */
+  background-color: #ebf9ff;
+  /* border: 2px solid #3abeff; Just change the color on hover */
+}
+.button1 {
+  background-color: #ebf9ff;
+  color: #3abeff;
+  border: 2px solid transparent; /* Keep border transparent initially */
+}
+
+.button1:hover {
+  background-color: #3abeff;
+  color: #ebf9ff;
+  border: 2px solid #ebf9ff; /* Change the border color */
+}
+.menu {
+  display: flex;
+  gap: 16px;
+}
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 150px 0 75px 0;
+}
+.hero-image img {
+  width: 70vh;
+  border: transparent;
+  border-radius: 100vh;
+}
+.description-text h1 {
+  font-size: 90px;
+}
+.description-text h2 {
+  font-size: 39px;
+}
+.description-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 20px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.text-animation {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s infinite;
+  animation-direction: alternate;
+  transform-origin: start;
+  animation-fill-mode: forwards;
+  width: 0;
+  max-width: 100%;
+  border-right: solid #3abeff 4px;
+}
+.cv-button {
+  margin-top: 20px;
+}
+#about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+  padding: 0 50px;
+}
+.profile-image img {
+  width: 70vh;
+  height: 70vh;
+  object-fit: cover;
+  border: transparent;
+  border-radius: 100vh;
+  margin: 50px 0;
+}
+.about-me-text {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+.about-me-animation {
+  max-width: fit-content;
+}
+#skills {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 48%;
+  gap: 10px;
+}
+.skill1 {
+  width: 100%;
+  height: 80px;
+}
+
+.container-progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #ebf9ff;
+  border: solid #3abeff 2px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.progress-bar-skill1 {
+  background-color: #3abeff;
+  height: 10px;
+  width: 95%;
+}
+.progress-bar-skill2 {
+  background-color: #3abeff;
+  height: 10px;
+  width: 90%;
+}
+.skills-text h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.progress-bar-skill4 {
+  background-color: #3abeff;
+  height: 10px;
+  width: 95%;
+}
+.progress-bar-skill5 {
+  background-color: #3abeff;
+  height: 10px;
+  width: 80%;
+}
+.progress-bar-skill6 {
+  background-color: #3abeff;
+  height: 10px;
+  width: 70%;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+}
+.project img {
+  height: 250px;
+  width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  border: #3abeff solid 2px;
+  border-radius: 10px;
+}
+.project-name a {
+  color: #3abeff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.project-name {
+  margin: 10px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.gmail,
+.linkedin {
+  display: flex;
+  text-align: center;
+  gap: 8px;
+}
+.icon img {
+  width: 50px;
+}
+.contact-links {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.address a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.address {
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #3abeff;
+  padding: 16px;
+}
+.gmail {
+  padding-right: 100px;
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #3abeff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+/* Smaller screens (e.g., tablets, medium devices) */
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 16px 32px;
+  }
+  .button,
+  .button1 {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+  .description-text h1 {
+    font-size: 60px;
+  }
+  .description-text h2 {
+    font-size: 30px;
+  }
+  .hero-image img,
+  .profile-image img {
+    width: 50vh;
+    height: 50vh;
+  }
+  .about-me-text {
+    font-size: 18px;
+  }
+}
+/* Style for menu in mobile view */
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    position: fixed;
+    top: 80px; /* Adjust to appear below the header */
+    right: 0;
+    background-color: #ebf9ff;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 998; /* Below nav */
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  /* Display hamburger menu */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Menu is active (open) */
+  .menu.active {
+    display: flex;
+  }
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .description-text h1 {
+    font-size: 40px;
+  }
+  .description-text h2 {
+    font-size: 24px;
+  }
+  /* .text-animation {
+    animation-play-state: paused; /* This pauses the animation */
+  /* border-right: none;
+  } */
+  .cv-button {
+    margin-bottom: 30px;
+  }
+  .hero-image img {
+    width: 80%;
+    height: auto;
+  }
+  #about-me {
+    flex-direction: column;
+    padding: 30px 50px;
+  }
+  .profile-image img {
+    width: 60vh;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 500px;
+    margin: 50px 0;
+  }
+  #skills {
+    margin: 50px;
+  }
+  .skills-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .skills-content {
+    width: 100%;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .links-container {
+    margin-left: 100px;
+  }
+}
